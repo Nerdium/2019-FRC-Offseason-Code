@@ -7,7 +7,8 @@ import frc.robot.Robot;
  * Move Forward to Cargo Ship
  */
 public class Forward extends Command{
-   Timer timer = new Timer();
+   private Timer timer = new Timer();
+   private ADIS16448_IMU imu = new ADIS16448_IMU();
 
     @Override
     protected void initialize() {
